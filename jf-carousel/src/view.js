@@ -19,7 +19,7 @@
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#view-script
  */
-import { useBlockProps, RichText } from "@wordpress/block-editor";
+import { useBlockProps } from "@wordpress/block-editor";
 import { __ } from "@wordpress/i18n";
 import { createRoot } from "@wordpress/element";
 import { AtButton, Carousel } from "@johnflyiii/jf-components";
@@ -60,7 +60,7 @@ window.addEventListener(
 	function () {
 		const rootDomElement = document.getElementById("my-custom-gutenberg-app");
 		const root = createRoot(rootDomElement);
-		root.render(<MyFirstApp />);
+		root.render(<MyFirstApp></MyFirstApp>);
 	},
 	false,
 );
